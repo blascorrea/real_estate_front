@@ -1,16 +1,27 @@
-# house
+# Real Estate
 
-A new Flutter project.
+Esta aplicación es la interfaz de usuario para manejar las operaciones CRUD para propiedades, está construída en Flutter.
 
-## Getting Started
+## Instalación
 
-This project is a starting point for a Flutter application.
+Instala el SDK de Flutter siguiendo las instrucciones de esta página https://docs.flutter.dev/get-started/install
 
-A few resources to get you started if this is your first Flutter project:
+* Clona el repositorio
+```bash
+    git clone https://github.com/blascorrea/real_estate_front.git
+```
+* Ir a la carpeta clonada en el PC e instala las dependencias
+```bash
+    cd /path/to/project
+    flutter pub get
+```
+* Edita el archivo /lib/utils/constants.dart dentro del proyecto, cambiando IP por la IP del PC y PORT por el puerto elegido para la aplicación servidor https://github.com/blascorrea/real_estate_back.git
+```bash
+    const BASE_URL = 'http://IP:PORT/api';
+```
+* Ejecuta la aplicación
+```bash
+    flutter run --debug
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+El anterior comando muestra los dispositivos conectados y disponibles para ejecutar la aplicación
